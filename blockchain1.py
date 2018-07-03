@@ -49,7 +49,7 @@ class Blockchain:
         for n in range(self.maxNonce):
             if int(block.hash(),16) <= self.target:
                 self.add(block)
-                print(block)
+                #print(block)
                 break
             else:
                 block.nonce +=1
